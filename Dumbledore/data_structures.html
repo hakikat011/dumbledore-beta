@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Structures - Dumbledore</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+  <h1>Data Structures</h1>
+  <a href="index.html" class="nav-button">Home</a>
+</header>
+
+<main>
+  <section>
+    <h3>Primitive Data Structures</h3>
+    <div class="expandable">
+      <div class="expandable-title" onclick="toggleExpandable(event)">
+        <span>Arrays</span>
+      </div>
+      <div class="expandable-content">
+        <p>Arrays are a fundamental data structure in Java that store elements of the same type in a contiguous block of memory. They have a fixed size, and elements can be accessed using their index.</p>
+        <a href="https://www.w3schools.com/java/java_arrays.asp" target="_blank">Learn more about Arrays</a>
+      </div>
+    </div>
+    <div class="expandable">
+      <div class="expandable-title" onclick="toggleExpandable(event)">
+        <span>Strings</span>
+      </div>
+      <div class="expandable-content">
+        <p>Strings are a sequence of characters in Java. They are implemented as objects of the String class and are immutable, which means that their value cannot be changed once assigned.</p>
+        <a href="https://www.w3schools.com/java/java_strings.asp" target="_blank">Learn more about Strings</a>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h3>Abstract Data Structures</h3>
+    <div class="expandable">
+      <div class="expandable-title" onclick="toggleExpandable(event)">
+        <span>Linear Data Structures</span>
+      </div>
+      <div class="expandable-content">
+        <p>Linear data structures are data structures in which elements are stored in a linear fashion. Common examples include Stacks, Queues, and Linked Lists.</p>
+        <a href="https://www.geeksforgeeks.org/introduction-to-data-structures-linear-data-structures/" target="_blank">Learn more about Linear Data Structures</a>
+      </div>
+    </div>
+    <div class="expandable">
+      <div class="expandable-title" onclick="toggleExpandable(event)">
+        <span>Non-linear Data Structures</span>
+      </div>
+      <div class="expandable-content">
+        <p>Non-linear data structures are data structures in which elements are not stored in a linear fashion. Common examples include Trees and Graphs.</p>
+        <a href="https://www.geeksforgeeks.org/introduction-to-data-structures-non-linear-data-structures/" target="_blank">Learn more about Non-linear Data Structures</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script>
+  function toggleExpandable(event) {
+    const content = event.target.nextElementSibling;
+    content.style.display = content.style.display === 'block' ? 'none' : 'block';
+  }
+</script>
+
+</body>
+</html>
+s

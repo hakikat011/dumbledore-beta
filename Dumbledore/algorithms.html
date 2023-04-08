@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Algorithms - Dumbledore</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+  <h1>Algorithms</h1>
+  <a href="index.html" class="nav-button">Home</a>
+</header>
+
+<main>
+  <section>
+    <h3>Sorting Algorithms</h3>
+    <div class="expandable">
+      <div class="expandable-title" onclick="toggleExpandable(event)">
+        <span>Bubble Sort</span>
+      </div>
+      <div class="expandable-content">
+        <p>Bubble Sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted.</p>
+        <a href="https://www.geeksforgeeks.org/bubble-sort/" target="_blank">Learn more about Bubble Sort</a>
+      </div>
+    </div>
+    <div class="expandable">
+      <div class="expandable-title" onclick="toggleExpandable(event)">
+        <span>Quick Sort</span>
+      </div>
+      <div class="expandable-content">
+        <p>Quick Sort is a highly efficient sorting algorithm that works by selecting a 'pivot' element from the array and partitioning the other elements into two groups - those less than the pivot and those greater than the pivot. It then recursively sorts the sub-arrays.</p>
+        <a href="https://www.geeksforgeeks.org/quick-sort/" target="_blank">Learn more about Quick Sort</a>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h3>Search Algorithms</h3>
+    <div class="expandable">
+      <div class="expandable-title" onclick="toggleExpandable(event)">
+        <span>Linear Search</span>
+      </div>
+      <div class="expandable-content">
+        <p>Linear Search is a simple search algorithm that sequentially checks each element of the list until a match is found or the whole list has been searched.</p>
+        <a href="https://www.geeksforgeeks.org/linear-search/" target="_blank">Learn more about Linear Search</a>
+      </div>
+    </div>
+    <div class="expandable">
+      <div class="expandable-title" onclick="toggleExpandable(event)">
+        <span>Binary Search</span>
+      </div>
+      <div class="expandable-content">
+        <p>Binary Search is an efficient search algorithm that works by repeatedly dividing the search interval in half. The algorithm compares the middle element of the interval with the target value. If they match, the search is successful. If not, the search continues in the left or right half of the interval, depending on the comparison.</p>
+        <a href="https://www.geeksforgeeks.org/binary-search/" target="_blank">Learn more about Binary Search</a>
+    </div>
+  </div>
+</section>
+<section>
+  <h3>Graph Algorithms</h3>
+  <div class="expandable">
+    <div class="expandable-title" onclick="toggleExpandable(event)">
+      <span>Depth-First Search (DFS)</span>
+    </div>
+    <div class="expandable-content">
+      <p>Depth-First Search (DFS) is a graph traversal algorithm that visits all the vertices of a graph in depth-first order. It uses a stack data structure to remember which vertices to visit next and explores as far as possible along each branch before backtracking.</p>
+      <a href="https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/" target="_blank">Learn more about Depth-First Search</a>
+    </div>
+  </div>
+  <div class="expandable">
+    <div class="expandable-title" onclick="toggleExpandable(event)">
+      <span>Breadth-First Search (BFS)</span>
+    </div>
+    <div class="expandable-content">
+      <p>Breadth-First Search (BFS) is a graph traversal algorithm that visits all the vertices of a graph in breadth-first order. It uses a queue data structure to remember which vertices to visit next and explores all neighbors of a vertex before moving on to their neighbors.</p>
+      <a href="https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/" target="_blank">Learn more about Breadth-First Search</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<script>
+function toggleExpandable(event) {
+  const content = event.target.nextElementSibling;
+  content.style.display = content.style.display === 'block' ? 'none' : 'block';
+}
+</script>
+
+</body>
+</html>
+
